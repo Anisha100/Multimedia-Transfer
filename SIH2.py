@@ -26,6 +26,7 @@ def rev(k):
     filecontent=filecontent.remove("*")
     filename=filename.remove("#")
     file_ext=file_ext.remove("#")
+    
     m=[filecontent[c:c+3] for c in range(0, len(filecontent), 3)]
     ba=arr.array(int(m))
     n=[filename[b:b+3] for b in range(0, len(filename), 3)]
